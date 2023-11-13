@@ -1,0 +1,68 @@
+        .content {
+          padding: 0;
+        }
+        .jb-box { background-color: black; width: 100%; height: 100%; overflow: hidden;margin: 0px auto; position: relative; }
+        /*video { width: 100%;}*/
+        .jb-text { position: absolute; top: 50%; width: 100%; }
+        .jb-text p { margin-top: -24px; text-align: center; font-size:  10vw; color: #ffffff; }
+/*백그라운드 동영상 크기*/
+@media screen and (max-width:768px){
+      video{
+        width:100%;
+        object-fit:none;
+	height:100vh;
+      }
+    }
+
+@media screen and (min-width:768px){
+      video{
+        width:100%;
+	height:100vh;
+      }
+    }
+
+/*검은 배경과 글씨*/
+    .ott_table {
+      background-color: black;
+      width: 100%;
+      height: 70vw;
+      color: #fff;
+      display: table; /*display 성질을 table롤 바꾸어 줘야 한다.*/
+    }
+
+     .ott {
+        display: table-cell; /* 그 밑에 직개 자식에는 display 성질을 table-cell으로 바꾸어 줘야 한다.*/
+        vertical-align: middle;  /*table에 관한 수직정렬 속성 top, middle, bottom 3가지가 있다.*/
+        text-align: center;
+        position: relative;
+      }
+
+/*over the top media service 글씨 크기*/
+    @media screen and (max-width:425px){
+      .ott #name{
+        font-size: 30px;
+      }
+    }
+
+    @media screen and (min-width:425px) and (max-width:768px) {
+      .ott #name{
+        font-size: 45px;
+      }
+    }
+
+    @media screen and (min-width:768px){
+      .ott #name{
+        font-size: 70px;
+      }
+    }
+/*ott부연설명 글씨 크기*/
+  @media screen and (max-width:425px){
+ #paragraph{  
+  font-size:0.7rem;
+ }
+}
+@media scree and (min-width:425px){
+ #paragraph{
+  font-size:1rem;
+ }
+}

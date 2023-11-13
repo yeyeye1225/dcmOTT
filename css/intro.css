@@ -1,0 +1,58 @@
+/*폰트사이즈, 패딩*/
+    @media screen and (min-width:768px){
+      .ph{
+        font-size:15px;
+      }
+      .ott_table{
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-top: 80px;
+        padding-bottom: 80px;
+      }
+    }
+    @media screen and (min-width:425px) and (max-width:768px){
+      .ph{
+        font-size:13px;
+      }
+      .ott_table{
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-top: 55px;
+        padding-bottom: 60px;
+      }
+    }
+    @media screen and (max-width:425px){
+      .ph{
+        font-size:11px;
+      }
+      .ott_table{
+        padding-left: 40px;
+        padding-right: 40px;
+        padding-top: 35px;
+        padding-bottom: 45px;
+      }
+    }
+/*글자 깨짐*/
+    .ph{
+      word-break: keep-all;
+    }
+
+  .content{
+     padding:0;
+  }
+
+
+    .ott_table {
+      background-color: black;
+      width: 100%;
+      /*height: 100vw;*/
+      color: #fff;
+      display: table; /*display 성질을 table롤 바꾸어 줘야 한다.*/
+    }
+
+     .ott {
+        display: table-cell; /* 그 밑에 직개 자식에는 display 성질을 table-cell으로 바꾸어 줘야 한다.*/
+        vertical-align: middle;  /*table에 관한 수직정렬 속성 top, middle, bottom 3가지가 있다.*/
+        text-align: center;
+        position: relative;
+      }
